@@ -1,0 +1,3 @@
+Objetivo: Transformar a tabela de alimentos com os ID's antigo em ID's n com relacionamento em cada uma delas, sendo elas Grupo, Produto, Preparação e ProdPrep.
+
+Solução: Utilizar o id antigo de cada documento para identificar sobre o que são, se existir um padrão, tentar redefinir isso em tabelas distintas, utilizando um db.products.find() para achar algo que eu queira e mostrar o id de cada item que aparecer para mim, separá-las depois em coisas diferentes e montar o relacionamento delas.
