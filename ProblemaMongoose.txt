@@ -1,0 +1,8 @@
+PROBLEMA – RELACIONAMENTOS ENTRE TABELAS – MONGOOSE
+
+1.	Na criação do Schema da tabela de grupo, manter um campo para o id, renomeando para idgrupo.
+2.	Após criar a collection do grupo, com um campo de idgrupo.
+3.	Para a criação do Schema da tabela, haveria campo recebendo o id do grupo.
+4.	Criação de uma função relacaoGrupoAlimento, em que receberia o id do grupo (dentro do documento de alimento, faria a busca na outra collection buscando o id do grupo correspondente e retornaria o _id, no final ele adicionaria o _id do grupo como um campo adicional no documento do alimento.
+5.	Para a outra tabela prodprep, a função teria que buscar 2 _id correspondentes em 2 tabelas (produto e preparação) e retornar para adicionar 2 campos no documento correspondente.
+
