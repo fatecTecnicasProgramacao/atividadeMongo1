@@ -1,0 +1,20 @@
+Para vincular o Produto ao Grupo:
+
+	-Colocar arquivo csv produto em uma variável, fazer uma busca que pegue o ID-ANTIGO e o ID-NOVO do GRUPO, salvar em outra variável (exemplo abaixo), depois fazer outro loop que faça o select de todas as linhas do produto e salve em outra variável (exemplo também abaixo) e insira mais um elemento buscando na variável "grupo" o id_novo do grupo buscando onde id_antigo_grupo = id_antigo_grupo e pegue o id_novo_grupo e insira no produto.
+
+	grupo = [{id_antigo: 1, id_novo: 2312312}]
+	produto = [{id_antigo_produto: 6300101, id_novo_produto: 9292901, id_antigo_grupo: 1, id_novo_grupo: 2312312}]
+
+
+Para vincular a Produto-Preparação ao Produto:
+
+	-Colocar arquivo csv prodprep em uma variável, e procure id_antigo_produto_produto = id_antigo_produto_prodprep e adicione o campo de id_novo_produto
+
+	prodprep = [{ id_novo_prodprep: 3030300, id_antigo_produto: 6300101, id_novo_produto: 9292901}]
+
+
+Para vincular a Preparação ao Produto-Preparação:
+
+	-Colocar arquivo csv Preparação em uma variável, e depois adicione no prodprep o id_novo_preparação onde id_antigo_preparação_prodprep = id_antigo_preparação_preparação.
+
+	prodprep = [{ id_novo_prodprep: 3030300, id_antigo_produto: 6300101, id_novo_produto: 9292901, id_antigo_preparação_prodprep: 99, id_novo_preparação_preparação: 2020200}]
