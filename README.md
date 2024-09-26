@@ -1,6 +1,6 @@
 << Leitura Arquivo CSV Node >>
 
-- Instalação necessárias no projeto:
+- Instalações necessárias no projeto:
 	npm install fs
 	npm install readline-sync
 
