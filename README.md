@@ -6,6 +6,16 @@
 
 	npm install readline-sync
 
+- Para atualizar os modelos
+
+   	npm run models
+
+- Para ler CSVs e gravar dados no BD
+
+  	npm run start
+
+  	CTRL+C para encerrar arquivo bat
+  
 Referências:
 
 Node — Como manipular arquivos usando FS, Thiago Silva, https://blog.toolboxdevops.cloud/node-crud-arquivos-142e3fb1892d
