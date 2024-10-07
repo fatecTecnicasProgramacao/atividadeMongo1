@@ -1,23 +1,5 @@
-<< Leitura Arquivo CSV Node >>
-
-- Instalações necessárias no projeto:
-  
-	npm install fs
-
-	npm install readline-sync
-
-- Para atualizar os modelos
-
-   	npm run models
-
-- Para ler CSVs e gravar dados no BD
-
-  	npm run start
-
-  	CTRL+C para encerrar arquivo bat
-  
-Referências:
-
-Node — Como manipular arquivos usando FS, Thiago Silva, https://blog.toolboxdevops.cloud/node-crud-arquivos-142e3fb1892d
-
-4 ways to read file line by line in Node.js, Geshan Manandhar, https://geshan.com.np/blog/2021/10/nodejs-read-file-line-by-line/
+De acordo com a imagem do Modelo Relacional da Tabela Taco Normalizada, faça o que se pede:
+- Importe, via código usando Mongoose, os registros das tabelas Grupo e Preparação, via arquivos CSVs, onde deverão ser gerados automaticamente UUIDs para cada registro;
+- Importe, via código usando Mongoose, os registros da tabela Produto, via arquivo CSV, onde deverão ser gerados UUIDs para cada registro, localizar e relacionar o UUID dos Grupos gerados anteriormente;
+- Importe, via código usando Mongoose, os registros da tabela ProdPrep, via arquivo CSV, onde deverão ser gerados UUIDS para cada registro, localizar e relacionar os UUIDS dos Produtos e Preparações, gerados anteriormente.
+- A ideia é mantermos o relacionamento original, só que usando agora os UUIDs gerados automaticamente pelo Mongoose.
