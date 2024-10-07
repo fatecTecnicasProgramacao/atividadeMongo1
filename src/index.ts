@@ -80,3 +80,4 @@ data.forEach(async linha => { // faz a leitura de cada linha da variável data
     }
     w++; // incrementa a varíavel de controle de linha
 }); // fecha data.forEach
+

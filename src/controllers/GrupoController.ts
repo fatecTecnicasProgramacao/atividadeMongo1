@@ -51,7 +51,7 @@ class GrupoController {
 
     // update
 
-    public async update(grupo:any, res: Response): Promise<Response> {
+   public async update(grupo:any, res: Response): Promise<Response> {
         var _id = grupo._id;
         var id = grupo.id;
         var gru_descricao = grupo.gru_descricao;
@@ -74,6 +74,7 @@ class GrupoController {
             return res.json({ message: error.message });
         }
     }
+        
 }
 
 export default new GrupoController();
